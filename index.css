@@ -1,35 +1,142 @@
 body {
-  font-family: sans-serif;
-  color: #333333;
-  font-size: 16px;
-}
-
-header p {
-  font-size: 60px;
-  color: #b22222;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-nav a {
-  font-size: 18px;
-  color: #555;
-  font-family: "Verdana", sans-serif;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-aside ul {
-  list-style-type: none;
+  font-family: "Playfair Display", serif;
+  color: #3c3c3c;
+  font-size: 1rem;
+  line-height: 1.7;
+  background-color: #fdfaf6;
+  margin: 0;
   padding: 0;
 }
 
-aside li {
-  font-size: 16px;
-  color: #8b4513;
-  margin-bottom: 10px;
+/*Element grows to fill up the vertical space*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+/*Keep aside and article in a row */
+main {
+  flex: 1;
+  display: flex;
+}
+
+/*Horizontal navbar*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4ede5;
+  padding: 1.5rem 2rem;
+}
+
+header p {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #5a3e36;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+  color: #5a3e36;
+  text-decoration: none;
+  font-family: "Lora", serif;
+}
+
+nav {
+  display: flex;
+}
+
+/*Vertical sidebar*/
+main {
+  display: flex;
+}
+
+/* Sidebar as vertical column */
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f5f0;
+  padding: 1.25rem;
+  width: 15rem;
+  border-right: 1px solid #e0dcd5;
+}
+
+/* sidebar space filler */
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #f4ede5;
+  padding: 2rem 1.25rem; /* 32px 20px */
+  text-align: center;
+  border-bottom: 1px solid #e0dcd5;
+}
+
+header p {
+  font-size: 2.25rem; /* 36px */
+  margin: 0;
+}
+
+nav a {
+  font-size: 1.125rem; /* 18px */
+  margin: 0 1rem;
+}
+
+/* Sidebar */
+aside {
+  padding: 1.25rem;
+  width: 13.75rem; /* 220px */
+}
+
+aside li {
+  background-color: #fcefe3;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Main Content */
 article {
-  margin-left: 220px;
-  padding: 20px;
+  padding: 2rem;
+  margin-top: 1.25rem;
+}
+
+article h1 {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Testimonial and Footer*/
+.testimonial {
+  background-color: #f3ece5;
+  padding: 1.25rem;
+  border-left: 4px solid #d1bfa7;
+  margin: 2rem 0;
+  font-style: italic;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #f4ede5;
+  color: #5a3e36;
+  text-align: center;
+  padding: 1.25rem;
+  font-family: "Lora", serif;
+  border-top: 1px solid #e0dcd5;
 }
