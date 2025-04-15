@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  color: #333333;
+  font-size: 16px;
+}
+
+header p {
+  font-size: 60px;
+  color: #b22222;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav a {
+  font-size: 18px;
+  color: #555;
+  font-family: "Verdana", sans-serif;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside li {
+  font-size: 16px;
+  color: #8b4513;
+  margin-bottom: 10px;
+}
+
+article {
+  margin-left: 220px;
+  padding: 20px;
+}
